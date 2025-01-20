@@ -4,67 +4,88 @@
     font-family: "Caveat", serif;
     font-optical-sizing: auto;
 }
+/* @media(min-width: 1300px) {
+ body {
+    background-color: red;
+ } */
+/* } */
 body {
     margin: 0px;
     padding: 0px;
     font-family: "Caveat", serif;
     font-optical-sizing: auto;
     border: solid 8px;
-  
+    
 }
 h1 {
     text-align: center;
     font-size: 35px;
+   
 }
 h1:hover {
-    transition: all 1.5s;
+    transition: all 1s;
     font-size: 39px;
-    color: gray;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
 }
-.Letters-Rows {
-    padding-top: 300px;
-    font-size: 20px;
-    font-family: "Caveat", serif;
-    font-optical-sizing: auto;
+a {
+    text-decoration: none !important;
+color: black;
 }
-.Row1 {
+.inputs {
+    font-size: 30px;
+    border: gray solid 2px;
+    width:60px;
+    margin: 15px;
+    
+    
+    }
+#Letters-Rows {
     display: flex;
-    flex-direction: row;
-    justify-content: center;   
+    padding-top: 300px;
+    font-family: "Caveat", serif;
 }
-.Row2 {
+.Inputs {
     display:flex;
     flex-direction: row;
+    font-size: 75px;
     justify-content: center;
-}
-.Row3 {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-}
+    margin-top: 0px;
+    }
+    #Row1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;   
+    }
+    #Row2 {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #Row3 {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
-#btn {
-font-size: 30px;
-border: gray solid 2px;
-width:60px;
-margin: 15px;
 
 
-}
-#btn:hover {
-transition: all 1s;
+/* 
+.Letters:hover {
+transition: all 0.3s;
 font-size: 40px;
 padding: 5px;
 text-align: center;
 color: gray;
 }
-.Inputs {
-display:flex;
-flex-direction: row;
-font-size: 75px;
-justify-content: center;
-margin-top: 0px;
-}
+.Letters:active {
+    transition: all 0.1s;
+    font-size: 50px;
+
+    text-align: center;
+    color: rgb(0, 0, 0);
+    } */
+
 .Tower {
     display:flex;
     flex-direction: row;

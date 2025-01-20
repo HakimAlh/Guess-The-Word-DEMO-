@@ -4,6 +4,13 @@
     font-optical-sizing: auto;
 }
 h1 {
-text-align: center;
-font-size: 50px;
+    text-align: center;
+    font-size: 35px;
+   
+}
+h1:hover {
+    transition: all 1s;
+    font-size: 39px;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
 }
