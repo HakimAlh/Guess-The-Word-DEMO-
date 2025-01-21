@@ -7,14 +7,14 @@
 const words = ['TOWER' ,'TERROR','FIGHTING']
 console.log(words.length)
 let chosenWord = ''
-let playerTried = ''
-let wordCount = ''
+let playerTried = 0;
+// const wordCount = ''
 // let playerTries 
 /*------------------------ Cached Element References ------------------------*/
 const letterElement = document.querySelector('.Letters-Rows')
 const btnElement = document.querySelectorAll('.Letters')
 const choiceElement = document.querySelector('#Choice')
-const wordInput = document.querySelector('.Word')
+const dashes = document.querySelector('.Word')
 // console.log(wordInput)
 // console.log(choiceElement)
 /*-------------------------------- Functions --------------------------------*/
@@ -25,17 +25,26 @@ const wordRandomizer = () => {
     console.log(chosenWord)
     const chars = chosenWord.split('');
     console.log(chars)
-    for (i=0; i<chars.length; i++){
-        if (chars.length > i++) 
-            break;
-    wordCount = wordInput.appendChild(document.createElement,"div");
-        // chars.forEach(char.length)
-        // return chars.length.forEach((count) =>
-        //     console.log(count)
-        // );
-    }
+    
+    //     chosenWord.forEach(() => {
+    // const wordElement = document.createElement('p')
+    // wordElement.textContent = '_'
+    //         console.log(wordElement)});
+        
+    
+    // for each character in the chars array i want to create an element which has a content of "_" and then I want to append that element to the wordInput div
+    chars.forEach((character) => {
+        console.log(character)
+        const dashElement = document.createElement('div')
+        dashElement.textContent = "_"
+        dashes.appendChild(dashElement)
+        console.log(dashElement)
+    })
 }
 
+// for the words that are chosen, if the letter isn't the same as the chosenWord then 
+
+// priority 1: Needed to see if the clickedLetter is in the character array (chars) if it is not in (chars) number will be added 1. If it is 5, then const lose, createelement 'div' and textcontent of the const to You lose 
 
 
 const clickedBtn = (event) => {
