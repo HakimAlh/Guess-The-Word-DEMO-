@@ -1,20 +1,23 @@
 /*-------------------------------- Constants --------------------------------*/
 
 /*-------------------------------- Variables --------------------------------*/
-const word = [{words: 'Tower', char:[5]} ,
-{words: 'Terror', char:[6]}
-]
-console.log(word)
+// const words = [{words: 'Tower', char:5} ,
+// {words: 'Terror', char:6}
+// ]
+const words = ['T','O','W','E','R']
+console.log(words)
+
+let wordChosen
 /*------------------------ Cached Element References ------------------------*/
 const letterElement = document.querySelector('#Letters-Rows')
 const btnElement = document.querySelectorAll('.Letters')
 console.log(btnElement)
 /*-------------------------------- Functions --------------------------------*/
-const wordRandomizer = (word) => {
-word = Math.floor(Math.random())
-wordsRandom = words
-console.log(wordRandomizer)
+const wordRandomizer = (words) => {
+num = Math.floor(Math.random()* 2)
+wordsRandom = words[num]
 }
+console.log()
 
 const clickedBtn = (event) => {
     if (event.target.classlist = 'Letters') {
@@ -22,12 +25,12 @@ console.log('Am I clicking?')
  } 
 }
 
-word.words.forEach(word() => {
-    (if word.char === ))
-return  document.createElement('input') {
-    input.textContent = '_'
+// word.words.forEach(word() => {
+//     (if word.char === ))
+// return  document.createElement('input') {
+//     input.textContent = '_'
     
-}
+// }
 
 /*----------------------------- Event Listeners -----------------------------*/
 letterElement.addEventListener('click', clickedBtn)
