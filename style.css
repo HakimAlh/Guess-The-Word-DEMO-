@@ -40,7 +40,7 @@ color: black;
     
     
     }
-#Letters-Rows {
+.Letters-Rows {
     display: flex;
     padding-top: 300px;
     font-family: "Caveat", serif;
@@ -52,17 +52,17 @@ color: black;
     justify-content: center;
     margin-top: 0px;
     }
-    #Row1 {
+    .Row1 {
         display: flex;
         flex-direction: row;
         justify-content: center;   
     }
-    #Row2 {
+    .Row2 {
         display:flex;
         flex-direction: row;
         justify-content: center;
     }
-    #Row3 {
+    .Row3 {
         display:flex;
         flex-direction: row;
         justify-content: center;

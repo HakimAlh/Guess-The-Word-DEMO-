@@ -4,26 +4,30 @@
 // const words = [{words: 'Tower', char:5} ,
 // {words: 'Terror', char:6}
 // ]
-const words = ['T','O','W','E','R']
-console.log(words)
-
-let wordChosen
+const words = ['TOWER' , 'TERROR','FIGHTING']
+console.log(words.length)
+let chosenWord
+let playerTried
+// let playerTries 
 /*------------------------ Cached Element References ------------------------*/
-const letterElement = document.querySelector('#Letters-Rows')
+const letterElement = document.querySelector('.Letters-Rows')
 const btnElement = document.querySelectorAll('.Letters')
-console.log(btnElement)
+const choiceElement = document.querySelector('#Choice')
+console.log(choiceElement)
 /*-------------------------------- Functions --------------------------------*/
-const wordRandomizer = (words) => {
-num = Math.floor(Math.random()* 2)
-wordsRandom = words[num]
+const wordRandomizer = () => {
+    chosenWord = words[Math.floor(Math.random() * words.length)]
 }
-console.log()
+console.log(Math.random())
 
 const clickedBtn = (event) => {
-    if (event.target.classlist = 'Letters') {
-console.log('Am I clicking?')
+(event.target.classlist = '.Letters') 
+event.target.id
+if (clickedBtn != words)
+
+console.log(event.target.id)
  } 
-}
+
 
 // word.words.forEach(word() => {
 //     (if word.char === ))
@@ -64,3 +68,20 @@ letterElement.addEventListener('click', clickedBtn)
 //     const inputElement = document.createElement('input'); {
 // inputElement.textContent = '_'
 //     } }
+
+// fn to start the game which is the init (intialization) function
+function init(){
+    wordRandomizer() //Intitalizes the wordRandomizer Function
+}
+
+init()
+
+function playerTries() { //Function for the number of tries the player makes
+if (playerTried != wordRandomizer)
+    choiceElement.textContent = `${clickedBtn}`
+console.log(`${clickedBtn}`)
+}
+// Set = 0;
+// if 5 
+// return loss  
+// = document.createElement = 'Choices'
