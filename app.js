@@ -4,7 +4,7 @@
 // const words = [{words: 'Tower', char:5} ,
 // {words: 'Terror', char:6}
 // ]
-const words = ['TOWER' , 'TERROR','FIGHTING']
+const words = ['TOWER' ,'TERROR','FIGHTING']
 console.log(words.length)
 let chosenWord
 let playerTried
@@ -27,6 +27,9 @@ if (clickedBtn != words)
 
 console.log(event.target.id)
  } 
+
+ const convert = chosenWord.split(/(\d)/);
+ console.log(chosenWord)
 
 
 // word.words.forEach(word() => {
@@ -72,13 +75,15 @@ letterElement.addEventListener('click', clickedBtn)
 // fn to start the game which is the init (intialization) function
 function init(){
     wordRandomizer() //Intitalizes the wordRandomizer Function
+    playerTries()
 }
 
 init()
 
 function playerTries() { //Function for the number of tries the player makes
 if (playerTried != wordRandomizer)
-    choiceElement.textContent = `${clickedBtn}`
+    document.createElement = 'h1'
+   h1.textContent = "hello"
 console.log(`${clickedBtn}`)
 }
 // Set = 0;
