@@ -6,19 +6,37 @@
 // ]
 const words = ['TOWER' ,'TERROR','FIGHTING']
 console.log(words.length)
-let chosenWord
-let playerTried
+let chosenWord = ''
+let playerTried = ''
+let wordCount = ''
 // let playerTries 
 /*------------------------ Cached Element References ------------------------*/
 const letterElement = document.querySelector('.Letters-Rows')
 const btnElement = document.querySelectorAll('.Letters')
 const choiceElement = document.querySelector('#Choice')
-console.log(choiceElement)
+const wordInput = document.querySelector('.Word')
+// console.log(wordInput)
+// console.log(choiceElement)
 /*-------------------------------- Functions --------------------------------*/
 const wordRandomizer = () => {
-    chosenWord = words[Math.floor(Math.random() * words.length)]
+    let index = Math.floor(Math.random() * words.length)
+    console.log(index)
+    chosenWord = words[index]
+    console.log(chosenWord)
+    const chars = chosenWord.split('');
+    console.log(chars)
+    for (i=0; i<chars.length; i++){
+        if (chars.length > i++) 
+            break;
+    wordCount = wordInput.appendChild(document.createElement,"div");
+        // chars.forEach(char.length)
+        // return chars.length.forEach((count) =>
+        //     console.log(count)
+        // );
+    }
 }
-console.log(Math.random())
+
+
 
 const clickedBtn = (event) => {
 (event.target.classlist = '.Letters') 
@@ -28,8 +46,11 @@ if (clickedBtn != words)
 console.log(event.target.id)
  } 
 
- const convert = chosenWord.split(/(\d)/);
- console.log(chosenWord)
+//  for (let i =0; i < 9; i++){
+//     if (chosenWord > 10) break;
+
+//  }
+//  console.log(i)
 
 
 // word.words.forEach(word() => {
@@ -38,7 +59,13 @@ console.log(event.target.id)
 //     input.textContent = '_'
     
 // }
+// fn to start the game which is the init (intialization) function
+function init(){
+    wordRandomizer() //Intitalizes the wordRandomizer Function
+    // playerTries()
+}
 
+init()
 /*----------------------------- Event Listeners -----------------------------*/
 letterElement.addEventListener('click', clickedBtn)
 
@@ -72,20 +99,14 @@ letterElement.addEventListener('click', clickedBtn)
 // inputElement.textContent = '_'
 //     } }
 
-// fn to start the game which is the init (intialization) function
-function init(){
-    wordRandomizer() //Intitalizes the wordRandomizer Function
-    playerTries()
-}
 
-init()
 
-function playerTries() { //Function for the number of tries the player makes
-if (playerTried != wordRandomizer)
-    document.createElement = 'h1'
-   h1.textContent = "hello"
-console.log(`${clickedBtn}`)
-}
+// function playerTries() { //Function for the number of tries the player makes
+// if (playerTried != wordRandomizer)
+//     document.createElement = 'h1'
+//    h1.textContent = "hello"
+// console.log(`${clickedBtn}`)
+// }
 // Set = 0;
 // if 5 
 // return loss  

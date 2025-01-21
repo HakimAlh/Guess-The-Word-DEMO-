@@ -68,7 +68,10 @@ color: black;
         justify-content: center;
     }
 
-
+/* .word {
+    display:flex;
+   text-align: center;
+} */
 
 /* 
 .Letters:hover {
