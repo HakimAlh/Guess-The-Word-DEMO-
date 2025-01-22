@@ -13,6 +13,7 @@ let chars = []
 let dashElement = ''
 let wrongChoice = ''
 let loseCount = 0;
+let winCount = 0;
 /*------------------------ Cached Element References ------------------------*/
 const letterElement = document.querySelector('.Letters-Rows')
 const btnElement = document.querySelectorAll('.Letters')
@@ -55,14 +56,14 @@ const clickedBtn = (event) => {
         if(currentChoice === char){
             console.log(idx)
             dashes[idx].textContent = currentChoice
-           if (chars.length = chosenWord[i]);
-            document.getElementById('Win').hidden = false;
-            
+            winCount++
+            if (winCount == chars.length){
+                // console.log('i am here')
+                document.getElementById('Win').hidden = false;
+            }
         }
-          
-            
-        
     })
+    
 
     if(!chosenWord.includes(currentChoice)){
         wrongChoice = document.createElement('div')
