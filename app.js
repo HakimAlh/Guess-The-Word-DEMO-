@@ -8,6 +8,8 @@ const words = ['TOWER' ,'TERROR','FIGHTING']
 console.log(words.length)
 let chosenWord = ''
 let playerTried = 0;
+let currentChoice = ''
+let dashSaved = ''
 // const wordCount = ''
 // let playerTries 
 /*------------------------ Cached Element References ------------------------*/
@@ -15,6 +17,7 @@ const letterElement = document.querySelector('.Letters-Rows')
 const btnElement = document.querySelectorAll('.Letters')
 const choiceElement = document.querySelector('#Choice')
 const dashes = document.querySelector('.Word')
+// const answerLetter = document.querySelector
 // console.log(wordInput)
 // console.log(choiceElement)
 /*-------------------------------- Functions --------------------------------*/
@@ -24,7 +27,7 @@ const wordRandomizer = () => {
     chosenWord = words[index]
     console.log(chosenWord)
     const chars = chosenWord.split('');
-    console.log(chars)
+    console.log(chars[index]) 
     
     //     chosenWord.forEach(() => {
     // const wordElement = document.createElement('p')
@@ -34,11 +37,23 @@ const wordRandomizer = () => {
     
     // for each character in the chars array i want to create an element which has a content of "_" and then I want to append that element to the wordInput div
     chars.forEach((character) => {
-        console.log(character)
-        const dashElement = document.createElement('div')
+        // console.log(character)
+        const dashElement = document.createElement('h3')
         dashElement.textContent = "_"
         dashes.appendChild(dashElement)
-        console.log(dashElement)
+            if (currentChoice === chars[index]);
+        
+        // document.createElement('h3')
+        // return dashElement.textContent = `${chars[index]}`   
+            
+           
+            //     });
+               
+            // console.log(dash)
+       
+           
+        // console.log(dashElement)
+    
     })
 }
 
@@ -48,11 +63,8 @@ const wordRandomizer = () => {
 
 
 const clickedBtn = (event) => {
-(event.target.classlist = '.Letters') 
-event.target.id
-if (clickedBtn != words)
-
-console.log(event.target.id)
+    currentChoice = event.target.id 
+    console.log(currentChoice)
  } 
 
 //  for (let i =0; i < 9; i++){

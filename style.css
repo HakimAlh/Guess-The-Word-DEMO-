@@ -68,10 +68,15 @@ color: black;
         justify-content: center;
     }
 
-/* .word {
-    display:flex;
-   text-align: center;
-} */
+.Word {
+    display: flex;
+    flex-direction: row;
+   text-align: center !important;
+   justify-content: center;
+   font-size: 40px;
+   margin-top: -55px;
+
+}
 
 /* 
 .Letters:hover {
