@@ -4,18 +4,11 @@
     font-family: "Caveat", serif;
     font-optical-sizing: auto;
 }
-/* @media(min-width: 1300px) {
- body {
-    background-color: red;
- } */
-/* } */
 body {
     margin: 0px;
     padding: 0px;
     font-family: "Caveat", serif;
     font-optical-sizing: auto;
-    border: solid 8px;
-    
 }
 h1 {
     text-align: center;
@@ -32,42 +25,8 @@ a {
     text-decoration: none !important;
 color: black;
 }
-.inputs {
-    font-size: 30px;
-    border: gray solid 2px;
-    width:60px;
-    margin: 15px;
-    
-    
-    }
-.Letters-Rows {
-    display: flex;
-    padding-top: 300px;
-    font-family: "Caveat", serif;
-}
-.Inputs {
-    display:flex;
-    flex-direction: row;
-    font-size: 75px;
-    justify-content: center;
-    margin-top: 0px;
-    }
-    .Row1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;   
-    }
-    .Row2 {
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .Row3 {
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-    }
 
+  
 .Word {
     display: flex;
     flex-direction: row;
@@ -75,30 +34,60 @@ color: black;
    justify-content: center;
    font-size: 40px;
    margin-top: -55px;
-
 }
 
-/* 
-.Letters:hover {
-transition: all 0.3s;
-font-size: 40px;
-padding: 5px;
-text-align: center;
-color: gray;
-}
-.Letters:active {
-    transition: all 0.1s;
-    font-size: 50px;
 
-    text-align: center;
+#Reset:hover {
+    transition: all 1s;
+    font-size: 40px;
     color: rgb(0, 0, 0);
-    } */
-
-.Tower {
-    display:flex;
-    flex-direction: row;
-    font-size: 60px;
-    justify-content: center;
-   margin-top: -90px;
-   
+    
 }
+
+button {
+    border: solid 1px black;
+    background-color: whitesmoke;
+    font-size: 50px;
+    width: 50px;
+}
+.dash:hover {
+    transition: all 0.5s;
+    padding: 5px;
+}
+#Reset-Parent {
+    display:flex;
+    justify-content: center;
+}
+.Letters {
+    text-align: center;
+}
+.Letters:hover {
+    transition: all 1s;
+    padding: 10px;
+    color: black
+}
+ .Row1 {
+display:flex;
+padding-top: 200px;
+justify-content: center;
+ }
+ .Row2 {
+    display:flex;
+    padding-top: 10px;
+    justify-content: center;
+   
+     }
+     .Row3 {
+        display:flex;
+        padding-top: 10px;
+        justify-content: center;
+         }
+        
+         #Reset {
+            display:flex;
+            font-size: 50px;
+            text-align: center;
+            justify-content: center !important;
+            
+            
+        }

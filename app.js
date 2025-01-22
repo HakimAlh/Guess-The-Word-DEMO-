@@ -60,6 +60,7 @@ const clickedBtn = (event) => {
             if (winCount == chars.length){
                 // console.log('i am here')
                 document.getElementById('Win').hidden = false;
+                document.getElementById('Reset').hidden = false;
             }
         }
     })
@@ -73,10 +74,12 @@ const clickedBtn = (event) => {
         console.log(loseCount)
         if(loseCount == 5){
         document.getElementById('Lose').hidden = false;
+        document.getElementById('Reset').hidden = false;
 
         }
     }
  } 
+
 
 function init(){
     wordRandomizer() 
