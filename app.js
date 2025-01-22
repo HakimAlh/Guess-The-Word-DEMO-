@@ -1,62 +1,45 @@
 /*-------------------------------- Constants --------------------------------*/
-
-/*-------------------------------- Variables --------------------------------*/
-// const words = [{words: 'Tower', char:5} ,
-// {words: 'Terror', char:6}
-// ]
 const words = ['TOWER' ,'TERROR','FIGHTING']
+/*-------------------------------- Variables --------------------------------*/
+
+
 console.log(words.length)
 let chosenWord = ''
 let playerTried = 0;
 let currentChoice = ''
-let dashSaved = ''
-// const wordCount = ''
-// let playerTries 
+let indexWord = ''
+let convertWord = ''
+let chars = []
+let dashElement = ''
+let wrongChoice = ''
+let loseCount = 0;
 /*------------------------ Cached Element References ------------------------*/
 const letterElement = document.querySelector('.Letters-Rows')
 const btnElement = document.querySelectorAll('.Letters')
 const choiceElement = document.querySelector('#Choice')
 const dashes = document.querySelector('.Word')
-// const answerLetter = document.querySelector
-// console.log(wordInput)
-// console.log(choiceElement)
+
 /*-------------------------------- Functions --------------------------------*/
 const wordRandomizer = () => {
     let index = Math.floor(Math.random() * words.length)
     console.log(index)
     chosenWord = words[index]
     console.log(chosenWord)
-    const chars = chosenWord.split('');
-    console.log(chars[index]) 
+    chars = chosenWord.split('');
+    console.log(chars) 
     
-    //     chosenWord.forEach(() => {
-    // const wordElement = document.createElement('p')
-    // wordElement.textContent = '_'
-    //         console.log(wordElement)});
-        
-    
-    // for each character in the chars array i want to create an element which has a content of "_" and then I want to append that element to the wordInput div
     chars.forEach((character) => {
         // console.log(character)
-        const dashElement = document.createElement('h3')
+        dashElement = document.createElement('h3')
+        dashElement.classList.add('dash')
         dashElement.textContent = "_"
         dashes.appendChild(dashElement)
-            if (currentChoice === chars[index]);
-        
-        // document.createElement('h3')
-        // return dashElement.textContent = `${chars[index]}`   
-            
-           
-            //     });
-               
-            // console.log(dash)
-       
-           
-        // console.log(dashElement)
-    
+        // console.log(dashes)
+        'h3' === convertWord
+        // console.log(convertWord)
     })
 }
-
+   
 // for the words that are chosen, if the letter isn't the same as the chosenWord then 
 
 // priority 1: Needed to see if the clickedLetter is in the character array (chars) if it is not in (chars) number will be added 1. If it is 5, then const lose, createelement 'div' and textcontent of the const to You lose 
@@ -65,28 +48,41 @@ const wordRandomizer = () => {
 const clickedBtn = (event) => {
     currentChoice = event.target.id 
     console.log(currentChoice)
+    const dashes = document.querySelectorAll('.dash')
+    document.getElementById(currentChoice).disabled = true;
+    chars.forEach((char, idx)=> {
+    
+        if(currentChoice === char){
+            console.log(idx)
+            dashes[idx].textContent = currentChoice
+           if (chars.length = chosenWord[i]);
+            document.getElementById('Win').hidden = false;
+            
+        }
+          
+            
+        
+    })
+
+    if(!chosenWord.includes(currentChoice)){
+        wrongChoice = document.createElement('div')
+        wrongChoice.textContent = currentChoice
+        console.log('WRONG:' , wrongChoice)
+        loseCount++
+        console.log(loseCount)
+        if(loseCount == 5){
+        document.getElementById('Lose').hidden = false;
+
+        }
+    }
  } 
 
-//  for (let i =0; i < 9; i++){
-//     if (chosenWord > 10) break;
-
-//  }
-//  console.log(i)
-
-
-// word.words.forEach(word() => {
-//     (if word.char === ))
-// return  document.createElement('input') {
-//     input.textContent = '_'
-    
-// }
-// fn to start the game which is the init (intialization) function
 function init(){
-    wordRandomizer() //Intitalizes the wordRandomizer Function
-    // playerTries()
+    wordRandomizer() 
 }
 
 init()
+
 /*----------------------------- Event Listeners -----------------------------*/
 letterElement.addEventListener('click', clickedBtn)
 
@@ -132,3 +128,54 @@ letterElement.addEventListener('click', clickedBtn)
 // if 5 
 // return loss  
 // = document.createElement = 'Choices'
+
+    // const test = ()=> {
+    //     chars.forEach((character) => {
+    //         console.log('salman')
+    //     })
+    // }
+    // test()
+        
+        
+        // document.createElement('h3')
+        // return dashElement.textContent = 'A'   
+            
+           
+            //     });
+               
+            // console.log(dash)
+       
+           
+        // console.log(dashElement)
+    
+//  for (let i =0; i < 9; i++){
+//     if (chosenWord > 10) break;
+
+//  }
+//  console.log(i)
+
+
+// word.words.forEach(word() => {
+//     (if word.char === ))
+// return  document.createElement('input') {
+//     input.textContent = '_'
+    
+// }
+// if (currentChoice === chars)
+//     msg = 'am i working?'
+// console.log(msg)
+// const words = [{words: 'Tower', char:5} ,
+// {words: 'Terror', char:6}
+// ]
+    //  const buttonA = document.getElementById("A");{
+        //     buttonA.disabled = true;
+        //  }
+            // const buttonB = document.getElementById("B");
+            // buttonB.disabled = true;
+//     chosenWord.forEach(() => {
+    // const wordElement = document.createElement('p')
+    // wordElement.textContent = '_'
+    //         console.log(wordElement)});
+        
+    
+    // for each character in the chars array i want to create an element which has a content of "_" and then I want to append that element to the wordInput div
