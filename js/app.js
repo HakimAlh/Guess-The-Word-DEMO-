@@ -1,5 +1,5 @@
 /*-------------------------------- Constants --------------------------------*/
-const words = ['TOWER' ,'TERROR','FIGHTING']
+const words = ['TOWER' ,'TERROR','FIGHTING','GAMING','STICKMAN','PARALLELOGRAM','SKIBIDI','AMAZING']
 /*-------------------------------- Variables --------------------------------*/
 
 
