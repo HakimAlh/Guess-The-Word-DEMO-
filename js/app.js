@@ -41,9 +41,6 @@ const wordRandomizer = () => {
     })
 }
    
-// for the words that are chosen, if the letter isn't the same as the chosenWord then 
-
-// priority 1: Needed to see if the clickedLetter is in the character array (chars) if it is not in (chars) number will be added 1. If it is 5, then const lose, createelement 'div' and textcontent of the const to You lose 
 
 
 const clickedBtn = (event) => {
@@ -58,7 +55,7 @@ const clickedBtn = (event) => {
             dashes[idx].textContent = currentChoice
             winCount++
             if (winCount == chars.length){
-                // console.log('i am here')
+                
                 document.getElementById('Win').hidden = false;
                 document.getElementById('Reset').hidden = false;
             }
@@ -91,7 +88,7 @@ init()
 letterElement.addEventListener('click', clickedBtn)
 
 /*----------------------------- SCRAPPED CODE -----------------------------*/
-// const words = ['Tower','Drawing','Terror','Block']
+
 // const words = [{Word:'Tower' , letter: T: ,'T' }] 
 // function letterElement (){
 //     if letterElement === 
@@ -183,3 +180,6 @@ letterElement.addEventListener('click', clickedBtn)
         
     
     // for each character in the chars array i want to create an element which has a content of "_" and then I want to append that element to the wordInput div
+    // for the words that are chosen, if the letter isn't the same as the chosenWord then 
+
+// priority 1: Needed to see if the clickedLetter is in the character array (chars) if it is not in (chars) number will be added 1. If it is 5, then const lose, createelement 'div' and textcontent of the const to You lose 

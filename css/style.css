@@ -94,3 +94,16 @@ justify-content: center;
             
             
         }
+        #instructions {
+            display:flex;
+            font-size: 50px;
+        
+        }
+        #Winning {
+            font-size: 50px;
+            color: rgb(77, 0, 177);
+        }
+        #Guess {
+            font-size: 50px;
+            color: rgb(77, 0, 177);
+        }
